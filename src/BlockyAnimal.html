@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Shaun Munshi: Assignment 2: Blocky Animals </title>
+</head>
+<!-- Grader Notes: This is a Minecraft Pig that can crawl, nod his head no, and wag his tail up and down. I
+took inspiration by looking at the HOF. I took some elements of Cylinder.js from existing online implementations.
+Past this, I consulted the TA's often.-->
+
+<body onload="main()">
+    <canvas height="600" id="webgl" width="600" >
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    
+<p id="fps">MS: 0 FPS:0 </p>
+
+    X<input type="range" min = "0" max="360" value="0" class = "slider" id="DimX">
+    Y<input type="range" min = "0" max="360" value="180" class = "slider" id="DimY">
+    Z<input type="range" min = "0" max="360" value="0" class = "slider" id="DimZ">
+    <br>
+    Leg
+    <input type="range" id="Leg" name="joint" min="0" max="25" value="0" class = "slider">
+    Hoof
+    <input type="range" id="Hoof" name="joint2" min="0" max="25" value="0" class = "slider">
+
+    Pig Shakes his head
+    <input type="range" id="HeadShake" name="joint2" min="0" max="25" value="0" class = "slider">
+    <br>
+
+  
+    Make the Pig Crawl
+    <button id="Crawl_On_Button" type="button">On</button>
+    <button id="Crawl_Off_Button" type="button">Off</button>
+    Make the Pig Wag his Tail
+    <button id="Wagging_Tails_On" type="button">On</button>
+    <button id="Wagging_Tails_Off" type="button">Off</button>
+
+
+    <br>
+
+<script src="../lib/webgl-utils.js"></script>
+<script src="../lib/webgl-debug.js"></script>
+<script src="../lib/cuon-utils.js"></script>
+<script src="../lib/cuon-matrix-cse160.js"></script>
+
+<script src="BlockyAnimal.js"></script>
+<script src="Cylinder.js"></script>
+<script src="Point.js"></script>
+<script src="Triangle.js"></script>
+<script src="Circle.js"></script>
+<script src="Cube.js"></script>
+</body>
+</html>
